@@ -1,0 +1,18 @@
+@use 'colors';
+
+
+
+.home{
+    
+
+    .home-container1{
+        background: linear-gradient(to right, colors.$primary2,  colors.$primary1);
+        height: 586px;
+        width: 801px;
+        border-radius: 15px;
+    }
+
+
+
+
+}

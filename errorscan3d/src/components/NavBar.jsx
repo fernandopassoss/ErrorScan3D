@@ -1,10 +1,32 @@
 import React from 'react'
 import '../styles/NavBar.scss'
+import { Link } from 'react-router-dom'
 
 function NavBar() {
   return (
     <div className='navbar'>
-      aaaaa
+      <Link to='/' className='link'>
+        <div>
+          ErrorScan3D
+        </div>
+      </Link>
+      <div className='navbar-centro'>
+      <Link to='/' className='link'>
+        <div>
+          Home
+        </div>
+      </Link>
+      <Link to='/' className='link'>
+        <div>
+          Sobre nós
+        </div>
+      </Link>
+      </div>
+      <Link to='/' className='link'>
+          <button className='link-botao'>
+            Nova Imagem +
+          </button>
+      </Link>
     </div>
   )
 }
