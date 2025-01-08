@@ -23,7 +23,7 @@ function NavBar() {
       </Link>
       </div>
       <Link to='/' className='link'>
-          <button className='link-botao'>
+          <button className='link-botao' >
             Nova Imagem +
           </button>
       </Link>
