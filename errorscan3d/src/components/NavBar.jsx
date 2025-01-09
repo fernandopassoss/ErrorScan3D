@@ -22,7 +22,7 @@ function NavBar() {
         </div>
       </Link>
       </div>
-      <Link to='/' className='link'>
+      <Link to='/upload' className='link'>
           <button className='link-botao' >
             Nova Imagem +
           </button>

@@ -27,7 +27,7 @@ function Upload() {
       <div className='upload-container' onClick={triggerFileInput}>
         <form>
           <div className='upload-itens'>
-            <img src={uploadicon} className='form-img'/>
+            <img src={uploadicon} className='form-img' />
 
             <input
               id='file-input'
@@ -44,18 +44,19 @@ function Upload() {
       </div>
       <div className='uploaded-container'>
         <div className='uploaded-container-white'>
+
           <div className='uploaded-container-img'>
             {image ? (
-              <img src={image} alt="Uploaded" style={{ height: '50%' }} />
+              <img src={image} alt="Uploaded" className='uploaded-container-img' />
             ) : (
-              <></>
+              <img className='uploaded-container-img' src='https://thumbs.dreamstime.com/b/nenhum-elemento-gr%C3%A1fico-de-miniatura-fotografia-nenhuma-imagem-encontrada-ou-dispon%C3%ADvel-na-galeria-s%C3%ADmbolo-espa%C3%A7o-reservado-324671543.jpg' ></img>
             )}
           </div>
           <div className='uploaded-container-text'>
-            <p>
+            <p className='text-title'>
               Análise da imagem
             </p>
-            <p>
+            <p className='text-infor'>
               Erro detectado: exemplo
             </p>
           </div>
@@ -63,8 +64,29 @@ function Upload() {
 
 
       </div>
-
-
+      <hr className='barra'></hr>
+      <div className='container-list'>
+        <div > 
+          <p className='list-title'>
+            Histórico
+          </p>
+        </div>
+        <div className='container-list-header'>
+        <ul className='list-header'>
+            <li className='list-item'>
+              Nome
+            </li>
+            <li className='list-item'>
+              Data do upload
+            </li>
+            <li className='list-item'>
+              Status
+            </li>
+          </ul>
+        </div>
+        <hr className='barra'></hr>
+        
+      </div>
     </div>
   )
 }

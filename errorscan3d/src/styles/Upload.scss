@@ -14,7 +14,7 @@
         align-items: center;
         height: 230px;
         max-width: 1000px;
-        margin: 40px auto;
+        margin: 70px auto 15px auto ;
         border-radius: 20px;
         border: 1px dashed colors.$dark-blue;
         cursor: pointer;
@@ -58,7 +58,8 @@
         display: flex;
         height: 230px;
         max-width: 1000px;
-        margin: 40px auto;
+        margin: auto;
+        margin-bottom: 50px;
         border-radius: 20px;
         border: 1px solid colors.$warning;
 
@@ -72,6 +73,7 @@
             border-radius: 0px 0px 20px 20px;
             gap: 25px;
             flex-direction: row;
+            padding: 20px;
 
             .uploaded-container-img {
                 background-color: rgb(224, 224, 224);
@@ -81,8 +83,69 @@
             }
 
             .uploaded-container-text{
+                margin-top: -30px;
+                
+                .text-title{
+                    font-size: 30px;
+                    font-weight: 400;
+                    height: 20px;
+                }
 
+                .text-infor{
+                    color: rgb(192, 192, 192);
+                }
             }
         }
+    }
+
+    .barra{
+        margin: auto;
+        width: 1100px;
+        border-top: 1px solid white;
+        
+    }
+
+    .container-list{
+        width: 1100px;
+    
+        margin: auto;
+        margin-top: 20px;
+       
+        
+        .list-title{
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        
+        .container-list-header{
+            width: 100%;
+            margin: auto;
+            background-color: #2c2c2c46;
+            color: white;
+            border-radius: 30px;
+            border: 1px solid white;
+            box-shadow: 0px 5px 8px #2c2c2c46;
+            margin-bottom: 10px ;
+            .list-header{
+                display: flex;
+                flex-direction: row;  
+                margin: auto;
+                list-style: none;
+                padding: 0px;
+                justify-content: space-between;
+                padding: 9px;
+                width: 85%;
+                font-size: 22px;
+                font-weight: 300;
+                
+
+                .list-item{
+                    
+                }
+            }
+        }
+
     }
 }
