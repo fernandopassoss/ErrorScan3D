@@ -4,7 +4,7 @@
 .upload {
     background: linear-gradient(to right, colors.$primary1, colors.$primary2);
     padding-top: 3vh;
-    height: 97vh;
+    height: auto;
     font-family: kanit, sans-serif;
 
     .upload-container {
@@ -147,5 +147,31 @@
             }
         }
 
+    }
+
+    .container-listing{
+        width: 100%;
+        margin: auto;
+        background-color: #2c2c2c46;
+        color: white;
+        border-radius: 20px;
+        border: 1px solid white;
+        box-shadow: 0px 5px 8px #2c2c2c46;
+        margin-top: 10px;
+
+        .list-listing{
+            display: flex;
+            flex-direction: row;  
+            margin: auto;
+            list-style: none;
+            padding: 0px;
+            justify-content: space-between;
+            padding: 9px;
+            width: 85%;
+            font-size: 22px;
+            font-weight: 300;
+            height: 60px;
+            align-items: center;
+        }
     }
 }

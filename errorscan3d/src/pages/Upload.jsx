@@ -6,6 +6,30 @@ import uploadicon from '../assets/upload.png'
 function Upload() {
   const [image, setImage] = useState(null);
 
+  const history = [
+    {
+      name:'imagem1.png',
+      uploadDate:'09/01/25',
+      status:'sem erro'
+    },
+    {
+      name:'imagem2.png',
+      uploadDate:'09/01/25',
+      status:'sem erro'
+    },
+    {
+      name:'imagem2.png',
+      uploadDate:'09/01/25',
+      status:'sem erro'
+    },
+    {
+      name:'imagem2.png',
+      uploadDate:'09/01/25',
+      status:'sem erro'
+    }
+
+  ]
+
   const handleImageUpload = (event) => {
     const file = event.target.files[0];
     if (file) {
@@ -72,7 +96,7 @@ function Upload() {
           </p>
         </div>
         <div className='container-list-header'>
-        <ul className='list-header'>
+         <ul className='list-header'>
             <li className='list-item'>
               Nome
             </li>
@@ -85,6 +109,22 @@ function Upload() {
           </ul>
         </div>
         <hr className='barra'></hr>
+        
+          {history.map((history, index)=>(
+            <div key={index} className='container-listing'>
+              <ul  className='list-listing'>
+                <li >
+                  {history.name }
+                </li>
+                <li>
+                  {history.uploadDate}
+                </li>
+                <li>
+                  {history.status}
+                </li>
+              </ul>
+            </div>
+          ))}
         
       </div>
     </div>
