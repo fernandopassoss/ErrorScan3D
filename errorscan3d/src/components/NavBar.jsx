@@ -16,6 +16,11 @@ function NavBar() {
           Home
         </div>
       </Link>
+      <Link to='/projects' className='link'>
+        <div>
+          Projetos
+        </div>
+      </Link>
       <Link to='/' className='link'>
         <div>
           Sobre nós
